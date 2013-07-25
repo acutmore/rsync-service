@@ -19,7 +19,7 @@ Run Applescript task:
 		tell application "Terminal"
 			set newTab to do script
 			set current settings of newTab to settings set "Pro"
-			do script "rsync -r -vv " & inputFolder & " " & outputFolder & ";" in newTab
+			do script "rsync -r -vv \"" & inputFolder & "\" \"" & outputFolder & "\";" in newTab
 		end tell
 	
 	end run
